@@ -4,7 +4,7 @@ object Es6 extends App :
 
     @annotation.tailrec
     def gcd(a: Int, b: Int): Int = (a, b) match
-        case equal if b == 0 => a 
-        case grater if a > b  => gcd(b, a % b)
-        case _ => 1
+        case (a, 0) => a 
+        case (a, b) if a > b  => gcd(b, a % b)
+        case _ => gcd(a, b % a)
             

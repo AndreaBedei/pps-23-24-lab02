@@ -13,4 +13,5 @@ class RecursionTest2 :
         assertEquals(gcd(12, 8), 4)
         assertEquals(gcd(14, 7), 7)
         assertEquals(gcd(7, 3), 1)
+        assertEquals(gcd(8, 12), 4)
 
